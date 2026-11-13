@@ -1,14 +1,14 @@
 ---
 title: "Optimal Tuning of FOPID Controller for a MIMO Aircraft Model Using Swarm Intelligence"
 collection: talks
-type: "Apresentação em Congresso"
+type: "Conference Presentation"
 permalink: /talks/2022-10-18-cba-fopid-mimo
-venue: "XXIV Congresso Brasileiro de Automática (CBA 2022)"
+venue: "XXIV Brazilian Automatic Control Conference (CBA 2022)"
 date: 2022-10-18
-location: "Fortaleza, CE, Brasil"
+location: "Fortaleza, CE, Brazil"
 ---
 
-Apresentação oral no **XXIV Congresso Brasileiro de Automática (CBA 2022)** abordando a sintonia multiobjetivo de controladores PID de ordem fracionária em modelos de aeronaves MIMO através de técnicas metaheurísticas de Particle Swarm Optimization (PSO).
+Oral presentation at the **XXIV Brazilian Automatic Control Conference (CBA 2022)** presenting multi-objective tuning of fractional-order PID controllers on multivariable (MIMO) aircraft models via Particle Swarm Optimization (PSO) metaheuristics.
 
-* **Área:** Automação, Controle de Aeronaves e Inteligência Coletiva.
-* **Autores:** Odilon L. C. Mendes, Guilherme A. Barreto, Marco A. V. Morales.
+* **Area:** Automation, Aircraft Control, and Swarm Intelligence.
+* **Authors:** Odilon L. C. Mendes, Guilherme A. Barreto, Marco A. V. Morales.

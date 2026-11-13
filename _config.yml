@@ -7,11 +7,11 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "pt-BR"
-title                    : "Odilon Linhares Carvalho Mendes"
+locale                   : "en-US"
+title                    : "Odilon L. Mendes"
 title_separator          : "-"
-name                     : &name "Odilon Mendes"
-description              : &description "Portfólio acadêmico e profissional de Odilon Linhares Carvalho Mendes. Pesquisador no Instituto Gridtech, Doutorando na UFC, Mestre pelo ITA e IFCE."
+name                     : &name "Odilon L. Mendes"
+description              : &description "Academic and professional portfolio of Odilon Linhares Carvalho Mendes. Researcher at Instituto Gridtech, Ph.D. Candidate at UFC, M.Sc. from ITA and IFCE."
 url                      : https://odilonmendes.github.io # the base hostname & protocol for your site
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "odilonmendes/odilonmendes.github.io"
@@ -22,12 +22,12 @@ repository               : "odilonmendes/odilonmendes.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Odilon Mendes"
+  name             : "Odilon L. Mendes"
   pronouns         : 
-  bio              : "Pesquisador no Instituto Gridtech | Doutorando em Eng. Elétrica (UFC) | Mestre em Seg. de Aviação (ITA) & Eng. de Telecomunicações (IFCE) | Eng. Mecatrônico (IFCE)"
+  bio              : "Researcher at Instituto Gridtech | Ph.D. Candidate in Electrical Engineering (UFC) | M.Sc. in Aviation Safety (ITA) & Telecommunications (IFCE) | Mechatronics Engineer (IFCE)"
   location         : "Fortaleza, Ceará, Brazil"
-  employer         : "Instituto Gridtech | UFC | ITA"
-  uri              : "https://odilonmendes.github.io"
+  employer         : "Instituto Gridtech"
+  uri              : 
   email            : "odilonlinharesmendes@gmail.com" 
 
   # Academic websites
@@ -73,13 +73,13 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   manuscripts:
-    title: 'Artigos em Periódicos (Journal Articles)'    
+    title: 'Journal Articles'    
   conferences:
-    title: 'Artigos em Conferências (Conference Papers)'
+    title: 'Conference Papers'
   reviews:
-    title: 'Revisões & Artigos de Síntese (Review Articles)'
+    title: 'Review Articles'
   preprints:
-    title: 'Preprints e Trabalhos em Andamento'
+    title: 'Preprints and Working Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

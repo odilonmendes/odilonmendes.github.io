@@ -9,9 +9,9 @@ paperurl: 'https://doi.org/10.21439/jme.v3i1.83'
 citation: 'Mendes, O. L. C., & da Silva Oliveira, R. (2020). Development of forward kinematics and construction of the driving and command system of a robotic manipulator. <i>Journal of Mechatronics Engineering</i>, 3(1), 9-18. DOI: 10.21439/jme.v3i1.83'
 ---
 
-### Resumo (Abstract)
+### Abstract
 
-Este trabalho apresenta o projeto completo, o desenvolvimento da modelagem cinemática direta (via convenção Denavit-Hartenberg) e a construção prática de um sistema eletromecânico de acionamento e comando para um manipulador robótico articulado. O sistema integra hardware de controle em malha fechada, interfaces de comunicação em tempo real e validação de trajetória experimental comparada aos modelos matemáticos teóricos.
+This work presents the complete design, development of forward kinematics modeling (using the Denavit-Hartenberg convention), and physical construction of an electromechanical driving and command system for an articulated robotic manipulator. The system integrates closed-loop control hardware, real-time communication interfaces, and experimental trajectory validation compared against theoretical mathematical models.
 
-* **Periódico:** Journal of Mechatronics Engineering, 3(1), 2020.
+* **Journal:** Journal of Mechatronics Engineering, 3(1), 2020.
 * **DOI:** [10.21439/jme.v3i1.83](https://doi.org/10.21439/jme.v3i1.83)

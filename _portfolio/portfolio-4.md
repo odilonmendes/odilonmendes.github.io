@@ -1,19 +1,19 @@
 ---
-title: "Cinemática e Sistema de Comando de Manipulador Robótico"
-excerpt: "Modelagem matemática Denavit-Hartenberg, eletrônica embarcada e acionamento eletromecânico de robô articulado."
+title: "Forward Kinematics and Control System of a Robotic Manipulator"
+excerpt: "Denavit-Hartenberg mathematical modeling, embedded electronics, and electromechanical actuation of an articulated robot (RD5)."
 collection: portfolio
 ---
 
-### Visão Geral do Projeto
+### Project Overview
 
-O desenvolvimento de braços e manipuladores robóticos industriais exige o domínio integrado de mecânica de precisão, modelagem cinemática e dinâmica, bem como projeto de eletrônica de potência e controle em tempo real.
+Developing industrial and educational robotic arms requires integrated mastery of precision mechanics, kinematic and dynamic modeling, power electronics design, and real-time control.
 
-O projeto contemplou a formulação analítica completa da cinemática direta utilizando matrizes de transformação homogênea segundo a convenção de Denavit-Hartenberg (D-H), além da construção física da estrutura, confecção de placas de circuito para drivers de acionamento de atuadores e desenvolvimento de firmware para interpolação de trajetórias tridimensionais no efetuador final.
+This project encompassed the complete analytical formulation of forward kinematics using homogeneous transformation matrices under the Denavit-Hartenberg (D-H) convention, alongside physical construction of the mechanical structure, design of power driver circuits for actuators, and firmware development for 3D end-effector trajectory interpolation.
 
-### Áreas Técnicas Envolvidas
-* **Cinemática Robótica:** Espaço de trabalho (*workspace*), parametrização geométrica e matrizes de rotação/translação.
-* **Hardware & Sistemas Embarcados:** Microcontroladores, circuitos de potência para motores, sensores de posição angular e barramentos de comunicação.
-* **Software de Supervisão:** Interface homem-máquina (IHM) para envio de comandos de trajetória e monitoramento de estados cinemáticos.
+### Technical Areas Involved
+* **Robotic Kinematics:** Workspace analysis, geometric parameterization, and rotation/translation matrices.
+* **Hardware & Embedded Systems:** Microcontrollers, motor power drivers, angular position sensors, and communication buses.
+* **Supervisory Software:** Human-Machine Interface (HMI) for sending trajectory commands and monitoring kinematic states.
 
-### Publicação Relacionada
-* **Mendes, O. L. C.**, & da Silva Oliveira, R. (2020). *Development of forward kinematics and construction of the driving and command system of a robotic manipulator*. **Journal of Mechatronics Engineering**, 3(1), 9-18. [DOI: 10.21439/jme.v3i1.83](https://doi.org/10.21439/jme.v3i1.83)
+### Related Publication
+* **Mendes, O. L. C.**, & da Silva Oliveira, R. (2020). *Development of forward kinematics and construction of the driving and command system of a robotic manipulator*. **Journal of Mechatronics Engineering**, 3(1), 9–18. [DOI: 10.21439/jme.v3i1.83](https://doi.org/10.21439/jme.v3i1.83)

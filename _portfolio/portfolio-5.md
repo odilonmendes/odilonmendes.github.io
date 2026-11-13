@@ -1,17 +1,14 @@
 ---
-title: "Pesquisa, Desenvolvimento e Inovação no Instituto Gridtech"
-excerpt: "Projetos de P&D em redes inteligentes, medição avançada e soluções computacionais para o setor de energia."
+title: "Smart Grid, AI, and Mesoscale Forecasting at Instituto Gridtech"
+excerpt: "R&D projects in smart grids, high-resolution mesoscale weather forecasting, machine learning, and intelligent energy systems."
 collection: portfolio
 ---
 
-### Atuação Profissional e de P&D
+### Professional Research & Development
 
-Como Pesquisador no **Instituto Gridtech de Pesquisa e Desenvolvimento**, participo de projetos estratégicos de inovação tecnológica (P&D&I) com foco em soluções para o setor de energia e sistemas industriais avançados.
+As an **AI Specialist | Machine Learning Researcher II** at **Instituto Gridtech de Pesquisa e Desenvolvimento**, I contribute to strategic R&D&I projects focused on next-generation power grid and energy intelligence solutions.
 
-As frentes de pesquisa e desenvolvimento envolvem:
-* **Redes Elétricas Inteligentes (*Smart Grids*):** Arquiteturas de comunicação, telemedição e interoperabilidade em medidores de energia elétrica.
-* **Processamento de Sinais e Dados:** Análise temporal de grandezas elétricas, algoritmos de detecção de fraudes/anomalias e balanceamento de carga.
-* **Sistemas Embarcados & IoT:** Projeto e validação de firmware e hardware dedicados a ambientes de medição de alta precisão e confiabilidade.
-* **Conformidade Metrológica e Normativa:** Aplicação de requisitos e procedimentos de homologação técnica.
-
-O Instituto Gridtech atua como polo de excelência na criação de propriedade intelectual, protótipos funcionais e transferência de tecnologia de ponta para a indústria nacional e internacional.
+Key research and development fronts include:
+* **Smart Grids & Mesoscale Weather Forecasting:** High-spatial-resolution, rapid-update mesoscale weather forecasting for transmission corridors, coupled with remaining useful life (RUL) estimation algorithms, dynamic thermal rating, and georeferenced risk maps.
+* **Machine Learning & Data Pipelines:** Designing and implementing Python ML workflows and predictive analytics for large-scale energy data interpretation.
+* **AI-Driven Energy Monitoring:** Building intelligent monitoring and optimization architectures to support strategic operational decisions across multidisciplinary R&D teams.

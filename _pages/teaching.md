@@ -1,30 +1,31 @@
 ---
 layout: archive
-title: "Ensino & Atuação Acadêmica"
+title: "Teaching & Academic Activities"
 permalink: /teaching/
 author_profile: true
 ---
 
 {% include base_path %}
 
-### Filosofia e Atividades Didáticas
+### Teaching Philosophy and Academic Engagement
 
-A integração entre rigor teórico e aplicação experimental prática orienta as atividades acadêmicas desenvolvidas junto aos cursos de graduação e pós-graduação em Engenharia na **Universidade Federal do Ceará (UFC)** e no **Instituto Federal do Ceará (IFCE)**.
+The integration between theoretical rigor and practical experimental application guides the academic and educational activities developed alongside undergraduate and graduate Engineering programs at the **Federal University of Ceará (UFC)** and the **Federal Institute of Education, Science and Technology of Ceará (IFCE)**.
 
-A formação multidisciplinar — abrangendo Engenharia Mecatrônica, Engenharia de Telecomunicações, Engenharia Elétrica e Engenharia Aeronáutica (ITA) — permite proporcionar aos estudantes uma visão holística de problemas complexos de engenharia.
-
----
-
-### Disciplinas e Tópicos de Interesse
-
-* **Sistemas de Controle Clássico e Moderno:** Modelagem matemática no domínio do tempo e frequência, lugar das raízes, resposta em frequência, espaço de estados e controle robusto.
-* **Visão Computacional & Processamento Digital de Imagens:** Filtragem, morfologia matemática, segmentação e aprendizagem de máquina para imagens médicas e industriais.
-* **Automação & Robótica:** Cinemática direta e inversa de robôs manipuladores, acionamentos eletromecânicos e sistemas em tempo real.
-* **Otimização Metaheurística:** Algoritmos bioinspirados (PSO, Algoritmos Genéticos) aplicados a problemas de engenharia.
+A multidisciplinary background — spanning Mechatronics Engineering, Telecommunications Engineering, Electrical Engineering, and Aeronautical Safety (ITA) — provides students and mentees with a holistic perspective on complex engineering and STEM challenges.
 
 ---
 
-### Cursos e Atividades Registradas
+### Courses & Topics of Interest
+
+* **Smart Grid and Forecasting:** High-spatial-resolution, rapid-update mesoscale weather forecasting for transmission corridors, spanning remaining useful life (RUL) estimation algorithms, dynamic thermal rating, and georeferenced risk maps.
+* **Classical and Modern Control Systems:** Mathematical modeling in time and frequency domains, predictive control with transport delay (dead-time systems), state-space control, and robust/fractional-order control.
+* **Computer Vision & Digital Image Processing:** Spatial filtering, mathematical morphology, segmentation, and machine learning for medical and industrial images.
+* **Automation & Robotics:** Forward and inverse kinematics of robotic manipulators, electromechanical actuation, and real-time systems.
+* **Metaheuristic Optimization:** Bio-inspired algorithms (PSO, Swarm Intelligence, Genetic Algorithms) applied to complex engineering problems.
+
+---
+
+### Recorded Courses and Activities
 
 {% for post in site.teaching reversed %}
   {% include archive-single.html %}

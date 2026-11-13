@@ -1,19 +1,19 @@
 ---
-title: "Sintonia Ótima de Controladores FOPID em Modelos de Aeronaves MIMO"
-excerpt: "Aplicação de cálculo fracionário e algoritmos de inteligência coletiva (PSO) no controle de atitude de aeronaves."
+title: "Optimal Tuning of FOPID Controllers for MIMO Aircraft Models"
+excerpt: "Application of fractional-order calculus and swarm intelligence algorithms (PSO) for aircraft attitude control."
 collection: portfolio
 ---
 
-### Visão Geral do Projeto
+### Project Overview
 
-A dinâmica de voo de aeronaves é caracterizada por acoplamentos multivariáveis (MIMO) severos e comportamento altamente não linear. O controle de ordem fracionária ($PI^{\lambda}D^{\mu}$ / FOPID) oferece graus adicionais de liberdade em comparação ao PID convencional, conferindo maior robustez e melhor rejeição a distúrbios atmosféricos.
+Aircraft flight dynamics are characterized by severe multivariable (MIMO) couplings and highly nonlinear behavior. Fractional-order control (FOPID) provides additional degrees of freedom compared to conventional PID controllers, delivering greater robustness and superior rejection of atmospheric disturbances.
 
-Este projeto investigou a formulação de problemas de sintonia multiobjetivo para controladores de atitude longitudinal e lateral de aeronaves, empregando metaheurísticas de Inteligência de Enxame (*Particle Swarm Optimization* - PSO). A técnica proposta garante rápida convergência paramétrica, estabilidade garantida em malha fechada e desacoplamento dinâmico eficaz.
+This project investigated the formulation of multi-objective tuning problems for longitudinal and lateral attitude controllers of aircraft models, employing Swarm Intelligence metaheuristics (*Particle Swarm Optimization* - PSO). The proposed technique ensures fast parametric convergence, guaranteed closed-loop stability, and effective dynamic decoupling.
 
-### Linhas de Pesquisa Envolvidas
-* **Engenharia Aeronáutica e Aeroespacial:** Modelos dinâmicos de estabilidade e controle em aeronaves (ITA / UFC).
-* **Cálculo Fracionário:** Operadores integro-diferenciais de ordem não-inteira aplicados à teoria de controle robusto.
-* **Inteligência de Enxame:** Algoritmos evolutivos e bioinspirados para otimização em espaços de busca complexos.
+### Research Lines Involved
+* **Aeronautical and Aerospace Engineering:** Dynamic stability and control models in aircraft (ITA / UFC).
+* **Fractional-Order Calculus:** Non-integer integro-differential operators applied to robust control theory.
+* **Swarm Intelligence:** Evolutionary and bio-inspired algorithms for optimization in complex search spaces.
 
-### Publicação Relacionada
-* **Mendes, O. L. C.**, Barreto, G. A., & Morales, M. A. V. (2022). *Optimal Tuning of FOPID Controller for a MIMO Aircraft Model Using Swarm Intelligence*. **XXIV Congresso Brasileiro de Automática (CBA 2022)**.
+### Related Publication
+* **Mendes, O. L. C.**, Barreto, G. A., & Morales, M. A. V. (2022). *Optimal Tuning of FOPID Controller for a MIMO Aircraft Model Using Swarm Intelligence*. **XXIV Brazilian Automatic Control Conference (CBA 2022)**.

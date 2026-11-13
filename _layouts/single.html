@@ -45,6 +45,25 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% if page.collection == 'portfolio' and page.portfolio_image %}
+          <figure class="portfolio-figure">
+            <img src="{{ page.portfolio_image | prepend: base_path }}"
+                 alt="{{ page.title | escape }}"
+                 data-zoomable="true"
+                 data-caption-en="{{ page.portfolio_image_caption | default: page.title | escape }}"
+                 data-caption-pt="{{ page.portfolio_image_caption_pt | default: page.title_pt | default: page.title | escape }}">
+            <figcaption>
+              {% if page.portfolio_image_caption %}
+                <span class="lang-en">{{ page.portfolio_image_caption }}</span>
+                <span class="lang-pt">{{ page.portfolio_image_caption_pt | default: page.portfolio_image_caption }}</span>
+              {% endif %}
+              <span class="portfolio-figure__hint">
+                (<span class="lang-en">Click to enlarge</span><span class="lang-pt">Clique para ampliar</span>)
+              </span>
+            </figcaption>
+          </figure>
+        {% endif %}
+
         {{ content }}
 
         {% if page.citation and page.paperurl and page.slidesurl %}

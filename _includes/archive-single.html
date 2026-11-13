@@ -19,8 +19,13 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if include.type == "grid" and teaser %}
+  <article class="archive__item{% if post.collection == 'portfolio' and post.portfolio_image %} archive__item--portfolio{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if post.collection == 'portfolio' and post.portfolio_image %}
+      <a href="{{ base_path }}{{ post.url }}" class="portfolio-card__thumb" aria-label="{{ title | escape }}">
+        <img src="{{ post.portfolio_image | prepend: base_path }}" alt="{{ title | escape }}" loading="lazy">
+      </a>
+      <div class="portfolio-card__body">
+    {% elsif include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
           {% if teaser contains "://" %}
@@ -75,6 +80,10 @@
       <p><a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer"><span class="lang-en">Access Paper</span><span class="lang-pt">Acessar Artigo</span></a></p>
     {% elsif post.slidesurl %}
       <p><a href="{{ post.slidesurl }}" target="_blank" rel="noopener noreferrer"><span class="lang-en">Download Slides</span><span class="lang-pt">Baixar Slides</span></a></p>
+    {% endif %}
+
+    {% if post.collection == 'portfolio' and post.portfolio_image %}
+      </div>
     {% endif %}
 
   </article>

@@ -4,6 +4,9 @@ title_pt: "Segmentação Automática de Buracos Maculares em Imagens OCT"
 excerpt: "Algorithms for accurate detection and segmentation of retinal pathologies in Optical Coherence Tomography (OCT) scans."
 excerpt_pt: "Algoritmos para detecção e segmentação precisa de patologias retinianas em exames de Tomografia de Coerência Óptica (OCT)."
 collection: portfolio
+portfolio_image: "/images/portfolio/automatic-segmentation.jpg"
+portfolio_image_caption: "Automated retinal surface boundary detection (a) and extracted contour mask (b) on a macular hole OCT B-scan."
+portfolio_image_caption_pt: "Detecção automática da borda retiniana (a) e contorno extraído (b) em exame OCT de buraco macular."
 ---
 
 <div class="lang-en" markdown="1">

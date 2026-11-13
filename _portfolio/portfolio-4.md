@@ -4,6 +4,9 @@ title_pt: "Cinemática Direta e Sistema de Controle de um Manipulador Robótico"
 excerpt: "Denavit-Hartenberg mathematical modeling, embedded electronics, and electromechanical actuation of an articulated robot (RD5)."
 excerpt_pt: "Modelagem matemática de Denavit-Hartenberg, eletrônica embarcada e acionamento eletromecânico de robô articulado (RD5)."
 collection: portfolio
+portfolio_image: "/images/portfolio/forward-kinematics.jpg"
+portfolio_image_caption: "Electronic drive and sensor interface schematic (Arduino Mega 2560, dual L298N H-bridge drivers, and DB25 connector) for the RD5 robotic manipulator."
+portfolio_image_caption_pt: "Esquemático eletrônico de acionamento e leitura de sensores (Arduino Mega 2560, pontes H L298N e conector DB25) do manipulador robótico RD5."
 ---
 
 <div class="lang-en" markdown="1">

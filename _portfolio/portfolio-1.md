@@ -4,6 +4,9 @@ title_pt: "Visão Computacional para Inspeção de Painéis Solares Fotovoltaico
 excerpt: "Digital image processing and computer vision for automatic soiling detection and anomaly inspection on solar modules."
 excerpt_pt: "Processamento digital de imagens e visão computacional para detecção automática de sujidade e anomalias em módulos solares."
 collection: portfolio
+portfolio_image: "/images/portfolio/computer-vision.png"
+portfolio_image_caption: "Computer vision and digital image processing pipeline from scene acquisition to object interpretation."
+portfolio_image_caption_pt: "Fluxo de visão computacional e processamento digital de imagens, da aquisição da cena à interpretação dos objetos."
 ---
 
 <div class="lang-en" markdown="1">

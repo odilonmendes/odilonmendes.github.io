@@ -28,6 +28,48 @@
       syncLanguageUI(chosen);
       window.dispatchEvent(new Event('resize'));
     });
+
+    // Simple click-to-enlarge lightbox for portfolio figures
+    var zoomables = document.querySelectorAll('img[data-zoomable="true"]');
+    if (zoomables.length) {
+      var overlay = document.createElement('div');
+      overlay.id = 'img-lightbox';
+      overlay.className = 'img-lightbox';
+      overlay.hidden = true;
+      overlay.innerHTML =
+        '<div class="img-lightbox__inner" role="dialog" aria-modal="true">' +
+          '<button type="button" class="img-lightbox__close" aria-label="Close">&times;</button>' +
+          '<img class="img-lightbox__img" src="" alt="">' +
+          '<div class="img-lightbox__caption"></div>' +
+        '</div>';
+      document.body.appendChild(overlay);
+
+      var lbImg = overlay.querySelector('.img-lightbox__img');
+      var lbCap = overlay.querySelector('.img-lightbox__caption');
+      var lbClose = overlay.querySelector('.img-lightbox__close');
+
+      function closeLb() {
+        overlay.hidden = true;
+        lbImg.src = '';
+      }
+
+      overlay.addEventListener('click', function (e) {
+        if (e.target === overlay || e.target === lbClose) closeLb();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !overlay.hidden) closeLb();
+      });
+
+      document.addEventListener('click', function (e) {
+        var img = e.target && e.target.closest ? e.target.closest('img[data-zoomable="true"]') : null;
+        if (!img) return;
+        var activeLang = document.documentElement.getAttribute('data-site-lang') || 'en';
+        lbImg.src = img.src;
+        lbImg.alt = img.alt || '';
+        lbCap.textContent = (activeLang === 'pt' ? img.getAttribute('data-caption-pt') : img.getAttribute('data-caption-en')) || '';
+        overlay.hidden = false;
+      });
+    }
   })();
 </script>
 

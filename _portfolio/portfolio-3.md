@@ -4,6 +4,9 @@ title_pt: "Sintonia Ótima de Controladores FOPID para Modelos de Aeronaves MIMO
 excerpt: "Application of fractional-order calculus and swarm intelligence algorithms (PSO) for aircraft attitude control."
 excerpt_pt: "Aplicação de cálculo de ordem fracionária e algoritmos de inteligência de enxame (PSO) para controle de atitude de aeronaves."
 collection: portfolio
+portfolio_image: "/images/portfolio/optimal-tuning.png"
+portfolio_image_caption: "Closed-loop control architecture with actuator saturation limits and anti-windup feedback."
+portfolio_image_caption_pt: "Arquitetura de controle em malha fechada com limites de atuação e realimentação anti-windup."
 ---
 
 <div class="lang-en" markdown="1">

@@ -4,6 +4,9 @@ title_pt: "Smart Grid, IA e Previsão de Mesoescala no Instituto Gridtech"
 excerpt: "R&D projects in smart grids, high-resolution mesoscale weather forecasting, machine learning, and intelligent energy systems."
 excerpt_pt: "Projetos de P&D em smart grids, previsão meteorológica de mesoescala em alta resolução, machine learning e sistemas energéticos inteligentes."
 collection: portfolio
+portfolio_image: "/images/portfolio/smart-grid.jpg"
+portfolio_image_caption: "ERA5-Land precipitation analysis across Brazil overlaid with regional transmission line corridors."
+portfolio_image_caption_pt: "Análise de precipitação ERA5-Land no Brasil com detalhamento regional e corredores de linhas de transmissão."
 ---
 
 <div class="lang-en" markdown="1">

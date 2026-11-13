@@ -4,7 +4,7 @@
 
 .masthead {
   position: fixed;
-  background: #161b22;
+  background: white;
   border-bottom: 1px solid $border-color;
   height: $masthead-height;
   top: 0;
@@ -19,6 +19,7 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
+    position: relative;
     padding: 1em 1em 1em;
     font-family: $sans-serif-narrow;
 
@@ -37,6 +38,7 @@
 }
 
 .masthead__menu {
+  padding-right: 5.5rem;
 
   ul {
     margin: 0;
@@ -52,7 +54,52 @@
   white-space: nowrap;
 
   &--lg {
-    padding-right: 3em;
+    padding-right: 2em;
     font-weight: 700;
+  }
+}
+
+.lang-switcher {
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid $border-color;
+  border-radius: 999px;
+  background: #f8f9fa;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.2;
+
+  &__btn {
+    border: 0;
+    background: transparent;
+    color: #6c757d;
+    padding: 0.15rem 0.4rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    &:hover {
+      color: #212529;
+    }
+
+    &.is-active {
+      background: #212529;
+      color: #ffffff;
+    }
+  }
+
+  &__sep {
+    color: #adb5bd;
+    user-select: none;
   }
 }

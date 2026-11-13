@@ -141,7 +141,7 @@ td > code {
   padding-bottom: 0.1rem;
   font-size: $type-size-6;
   background: $code-background-color;
-  border: 1px solid $border-color;
+  border: 1px solid $lighter-gray;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
 
@@ -248,8 +248,8 @@ figcaption {
     transition: $global-transition;
 
     &:hover {
-      color: $link-color;
-      border-bottom-color: $link-color;
+      color: #000;
+      border-bottom-color: #000;
     }
   }
 }

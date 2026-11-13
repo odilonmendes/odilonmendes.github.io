@@ -6,19 +6,25 @@
 
 main:
   - title: "Publications"
+    title_pt: "Publicações"
     url: /publications/
 
   - title: "Portfolio"
+    title_pt: "Portfólio"
     url: /portfolio/
 
   - title: "Talks"
+    title_pt: "Palestras"
     url: /talks/
 
   - title: "Teaching"
+    title_pt: "Ensino"
     url: /teaching/
 
   - title: "Experience"
+    title_pt: "Atuação Profissional"
     url: /experience/
 
   - title: "CV"
+    title_pt: "Currículo"
     url: /cv/

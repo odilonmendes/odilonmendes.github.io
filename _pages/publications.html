@@ -1,28 +1,30 @@
 ---
 layout: archive
 title: "Publications"
+title_pt: "Publicações"
 permalink: /publications/
 author_profile: true
 ---
 
 <div class="wordwrap">
-  You can also find my updated list of articles, metrics, and citations on
+  <span class="lang-en">You can also find my updated list of articles, metrics, and citations on</span>
+  <span class="lang-pt">Você também pode acessar minha lista atualizada de artigos, métricas e citações no</span>
   {% if site.author.googlescholar %}<a href="{{site.author.googlescholar}}" target="_blank" rel="noopener noreferrer">Google Scholar</a>{% endif %}
-  {% if site.author.lattes %} &middot; <a href="{{site.author.lattes}}" target="_blank" rel="noopener noreferrer">Lattes Curriculum (CNPq)</a>{% endif %}.
+  {% if site.author.lattes %} &middot; <a href="{{site.author.lattes}}" target="_blank" rel="noopener noreferrer"><span class="lang-en">Lattes Curriculum (CNPq)</span><span class="lang-pt">Currículo Lattes (CNPq)</span></a>{% endif %}.
 </div>
 
 {% if site.publication_category %}
   <style>
-    .pub-toc{position:sticky;top:70px;z-index:15;background:#0d1117;
-      margin:0.5em 0 1em;padding:0.5em 0;border-bottom:1px solid #30363d;font-size:0.9em;}
+    .pub-toc{position:sticky;top:70px;z-index:15;background:#fff;
+      margin:0.5em 0 1em;padding:0.5em 0;border-bottom:1px solid #ddd;font-size:0.9em;}
     .page__content h2[id]{scroll-margin-top:120px;}
   </style>
-  <div class="wordwrap pub-toc"><strong>Jump to:</strong>
+  <div class="wordwrap pub-toc"><strong><span class="lang-en">Jump to:</span><span class="lang-pt">Ir para:</span></strong>
     {% assign shown = 0 %}
     {% for category in site.publication_category %}
       {% assign cat_posts = site.publications | where: "category", category[0] %}
       {% if cat_posts.size > 0 %}
-        {% if shown > 0 %} &middot; {% endif %}<a href="#{{ category[0] }}">{{ category[1].title }}</a>{% assign shown = shown | plus: 1 %}
+        {% if shown > 0 %} &middot; {% endif %}<a href="#{{ category[0] }}"><span class="lang-en">{{ category[1].title }}</span><span class="lang-pt">{{ category[1].title_pt | default: category[1].title }}</span></a>{% assign shown = shown | plus: 1 %}
       {% endif %}
     {% endfor %}
   </div>
@@ -39,7 +41,7 @@ author_profile: true
         {% continue %}
       {% endif %}
       {% unless title_shown %}
-        <h2 id="{{ category[0] }}">{{ category[1].title }}</h2><hr />
+        <h2 id="{{ category[0] }}"><span class="lang-en">{{ category[1].title }}</span><span class="lang-pt">{{ category[1].title_pt | default: category[1].title }}</span></h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
       {% include archive-single.html %}

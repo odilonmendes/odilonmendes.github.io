@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Odilon L. Mendes"
+title                    : "Odilon Linhares Carvalho Mendes"
 title_separator          : "-"
-name                     : &name "Odilon L. Mendes"
+name                     : &name "Odilon Linhares Carvalho Mendes"
 description              : &description "Academic and professional portfolio of Odilon Linhares Carvalho Mendes. Researcher at Instituto Gridtech, Ph.D. Candidate at UFC, M.Sc. from ITA and IFCE."
 url                      : https://odilonmendes.github.io # the base hostname & protocol for your site
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -25,8 +25,9 @@ author:
   name             : "Odilon L. Mendes"
   pronouns         : 
   bio              : "Researcher at Instituto Gridtech | Ph.D. Candidate in Electrical Engineering (UFC) | M.Sc. in Aviation Safety (ITA) & Telecommunications (IFCE) | Mechatronics Engineer (IFCE)"
+  bio_pt           : "Pesquisador no Instituto Gridtech | Doutorando em Engenharia Elétrica (UFC) | Mestre em Segurança de Aviação (ITA) e Telecomunicações (IFCE) | Engenheiro de Mecatrônica (IFCE)"
   location         : "Fortaleza, Ceará, Brazil"
-  employer         : "Instituto Gridtech"
+  employer         : 
   uri              : 
   email            : "odilonlinharesmendes@gmail.com" 
 
@@ -73,13 +74,17 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
+    title_pt: 'Artigos em Periódicos'
   conferences:
     title: 'Conference Papers'
+    title_pt: 'Artigos em Anais de Congressos'
   reviews:
     title: 'Review Articles'
+    title_pt: 'Artigos de Revisão'
   preprints:
     title: 'Preprints and Working Papers'
+    title_pt: 'Preprints e Artigos em Preparação'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

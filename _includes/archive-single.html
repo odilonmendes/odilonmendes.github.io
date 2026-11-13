@@ -8,8 +8,14 @@
 
 {% if post.id %}
   {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+  {% if post.title_pt %}
+    {% assign title_pt = post.title_pt | markdownify | remove: "<p>" | remove: "</p>" %}
+  {% endif %}
 {% else %}
   {% assign title = post.title %}
+  {% if post.title_pt %}
+    {% assign title_pt = post.title_pt %}
+  {% endif %}
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
@@ -28,9 +34,9 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        <a href="{{ post.link }}">{% if post.title_pt %}<span class="lang-en">{{ title }}</span><span class="lang-pt">{{ title_pt }}</span>{% else %}{{ title }}{% endif %}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{% if post.title_pt %}<span class="lang-en">{{ title }}</span><span class="lang-pt">{{ title_pt }}</span>{% else %}{{ title }}{% endif %}</a>
       {% endif %}
     </h2>
     
@@ -39,31 +45,36 @@
     {% endif %}
 
         {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p>{% if post.type_pt %}<span class="lang-en">{{ post.type }}</span><span class="lang-pt">{{ post.type_pt }}</span>{% else %}{{ post.type }}{% endif %}, <i>{{ post.venue }}</i></p>
         {% elsif post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p><span class="lang-en">Published in</span><span class="lang-pt">Publicado em</span> <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      {% if post.excerpt_pt %}
+        <div class="archive__item-excerpt lang-en" itemprop="description">{{ post.excerpt | markdownify }}</div>
+        <div class="archive__item-excerpt lang-pt" itemprop="description">{{ post.excerpt_pt | markdownify }}</div>
+      {% else %}
+        <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      {% endif %}
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
     {% if post.citation and post.paperurl and post.slidesurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">Access Paper</a> | <a href="{{ post.slidesurl }}" target="_blank" rel="noopener noreferrer">Download Slides</a></p>
+      <p><span class="lang-en">Recommended citation:</span><span class="lang-pt">Citação recomendada:</span> {{ post.citation }}<br /><a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer"><span class="lang-en">Access Paper</span><span class="lang-pt">Acessar Artigo</span></a> | <a href="{{ post.slidesurl }}" target="_blank" rel="noopener noreferrer"><span class="lang-en">Download Slides</span><span class="lang-pt">Baixar Slides</span></a></p>
     {% elsif post.citation and post.paperurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">Access Paper</a></p>
+      <p><span class="lang-en">Recommended citation:</span><span class="lang-pt">Citação recomendada:</span> {{ post.citation }}<br /><a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer"><span class="lang-en">Access Paper</span><span class="lang-pt">Acessar Artigo</span></a></p>
     {% elsif post.citation and post.slidesurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}" target="_blank" rel="noopener noreferrer">Download Slides</a></p>
+      <p><span class="lang-en">Recommended citation:</span><span class="lang-pt">Citação recomendada:</span> {{ post.citation }}<br /><a href="{{ post.slidesurl }}" target="_blank" rel="noopener noreferrer"><span class="lang-en">Download Slides</span><span class="lang-pt">Baixar Slides</span></a></p>
     {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }}</p>
+      <p><span class="lang-en">Recommended citation:</span><span class="lang-pt">Citação recomendada:</span> {{ post.citation }}</p>
     {% elsif post.paperurl %}
-      <p><a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">Access Paper</a></p>
+      <p><a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer"><span class="lang-en">Access Paper</span><span class="lang-pt">Acessar Artigo</span></a></p>
     {% elsif post.slidesurl %}
-      <p><a href="{{ post.slidesurl }}" target="_blank" rel="noopener noreferrer">Download Slides</a></p>
+      <p><a href="{{ post.slidesurl }}" target="_blank" rel="noopener noreferrer"><span class="lang-en">Download Slides</span><span class="lang-pt">Baixar Slides</span></a></p>
     {% endif %}
 
   </article>

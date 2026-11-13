@@ -1,4 +1,35 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
+<script>
+  (function () {
+    function syncLanguageUI(lang) {
+      var normalized = (lang === 'pt') ? 'pt' : 'en';
+      document.documentElement.setAttribute('data-site-lang', normalized);
+      document.documentElement.setAttribute('lang', normalized === 'pt' ? 'pt-BR' : 'en-US');
+      var buttons = document.querySelectorAll('.lang-switcher__btn');
+      for (var i = 0; i < buttons.length; i++) {
+        var btn = buttons[i];
+        var isActive = btn.getAttribute('data-set-lang') === normalized;
+        btn.classList.toggle('is-active', isActive);
+        btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      }
+    }
+
+    var current = document.documentElement.getAttribute('data-site-lang') || 'en';
+    syncLanguageUI(current);
+
+    document.addEventListener('click', function (evt) {
+      var target = evt.target && evt.target.closest ? evt.target.closest('[data-set-lang]') : null;
+      if (!target) return;
+      var chosen = target.getAttribute('data-set-lang');
+      try {
+        localStorage.setItem('site_lang', chosen);
+      } catch (e) {}
+      syncLanguageUI(chosen);
+      window.dispatchEvent(new Event('resize'));
+    });
+  })();
+</script>
+
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
